@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #040411;
+}
+
+.welcomeNote {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+span {
+    font-family: 'Times New Roman',serif;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline #cb9b51;
+    background-image: linear-gradient(
+	                        to right,
+                        	#462d23 0,
+                           	#cb9b51 22%, 
+                        	#f6e27a 45%,
+                        	#f6f2c0 50%,
+                        	#f6e27a 55%,
+                        	#cb9b51 78%,
+	                        #462523 100%
+	                    );
+   color:transparent;
+   -webkit-background-clip:text;
+}
+
+.main-hadding {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d3bb46;
+}
+
+.registerContainer {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+}
+
+.cardScan {
+    flex: 0.38;
+}
+
+.cardScan img {
+    width: 300px;
+    margin-left: 100px;
+}
+
+.preloader-scan {
+    background-color: #ffffffe5;
+    height: 30vh;
+    flex: 0.3;
+    padding-right: 50px;
+    display: table;
+    text-align: center;
+}
+.preloader-scan li:nth-child(1) {
+    width: 5px;
+}
+.preloader-scan li:nth-child(2) {
+    width: 3px;
+}
+.preloader-scan li:nth-child(3) {
+    width: 4px;
+}
+.preloader-scan li:nth-child(4) {
+    width: 4px;
+}
+.preloader-scan li:nth-child(5) {
+    width: 5px;
+}
+.preloader-scan li:nth-child(6) {
+    width: 1px;
+}
+.preloader-scan li:nth-child(7) {
+    width: 5px;
+}
+.preloader-scan li:nth-child(8) {
+    width: 4px;
+}
+.preloader-scan li:nth-child(9) {
+    width: 2px;
+}
+.preloader-scan li:nth-child(10) {
+    width: 2px;
+}
+.preloader-scan li:nth-child(11) {
+    width: 5px;
+}
+.preloader-scan li:nth-child(12) {
+    width: 4px;
+}
+.preloader-scan li:nth-child(13) {
+    width: 4px;
+}
+.preloader-scan li:nth-child(14) {
+    width: 3px;
+}
+.preloader-scan li:nth-child(15) {
+    width: 3px;
+}
+.preloader-scan li:nth-child(16) {
+    width: 4px;
+}
+.preloader-scan li:nth-child(17) {
+    width: 2px;
+}
+.preloader-scan li:nth-child(18) {
+    width: 1px;
+}
+.preloader-scan li:nth-child(19) {
+    width: 4px;
+}
+.preloader-scan li:nth-child(20) {
+    width: 3px;
+}
+.preloader-scan li:nth-child(21) {
+    width: 1px;
+}
+.preloader-scan li:nth-child(22) {
+    width: 5px;
+}
+.preloader-scan li:nth-child(23) {
+    width: 3px;
+}
+.preloader-scan li:nth-child(24) {
+    width: 5px;
+}
+.preloader-scan ul {
+    display: table-cell;
+    vertical-align: middle;
+    list-style-type: none;
+    text-align: center;
+}
+.preloader-scan li {
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background-color: #444;
+}
+.preloader-scan .laser {
+    width: 300px;
+    background-color: rgb(201, 63, 39);
+    height: 1px;
+    margin-top: -70px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 0 4px rgb(235, 2, 2);
+    animation: scanning 2s infinite;
+}
+.preloader-scan .diode {
+    animation: beam 0.01s infinite;
+}
+
+@keyframes beam {
+    50% {
+        opacity: 0;
+    }
+}
+@keyframes scanning {
+    50% {
+        transform: translateY(75px);
+    }
+}
+
+.list {
+    margin-right: 50px;
+    margin-left: 50px;
+    flex: 0.3;
+    color: #cb9b51;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    height: 70px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40vw;
+    font-size: 26px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #f1d755;
+    background-color: #5E30F5;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #311983;
+    color: #ecc810;
+}
+
+button:focus {
+    background-color: #f1d755;
+    color: #5E30F5;
+}
+
+marquee {
+    margin-top: 80px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1d755;
+}

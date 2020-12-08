@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #040411;
+}
+
+.welcomeNote {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+span {
+  font-family: 'Times New Roman',serif;
+  letter-spacing: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline #cb9b51;
+  background-image: linear-gradient(
+                        to right,
+                      	#462d23 0,
+                      	#cb9b51 22%, 
+                      	#f6e27a 45%,
+                      	#f6f2c0 50%,
+                      	#f6e27a 55%,
+                      	#cb9b51 78%,
+                        #462523 100%
+                    );
+  color:transparent;
+  -webkit-background-clip:text;
+}
+
+.main-hadding {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #d3bb46;
+}
+
+:root{
+  --size:2rem;
+}
+
+.fingerprintContainer {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+}
+
+.fingerImage {
+  flex: 0.35;
+}
+
+.fingerImage img {
+  width: 300px;
+  padding-left: 80px;
+}
+
+.scannerSvg {
+  flex: 0.35;
+  background-color: #000000;
+  height: 50vh;
+  margin-right: 50px;
+}
+
+.finger-print{
+  height:40vmin;
+  width:20vmin;
+  border:2px solid #fff;
+  border-radius:20vmin;
+  margin-top: 30px;
+  margin-left: 177px;
+  overflow:hidden;
+}
+
+svg {
+  margin:0 -20vmin;
+  height:40vmin;
+  width:60vmin;
+  stroke-dasharray:0;
+  cursor:pointer;
+}
+svg:hover{
+  animation: dash 2s ease-out;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 0;
+  }
+  50% {
+    stroke-dasharray: 150;
+  }
+  100% {
+    stroke-dasharray: 0;
+  }
+}
+
+.text {
+  margin-right: 50px;
+  flex: 0.3;
+  color: #cb9b51;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+button {
+    height: 60px;
+    width: 280px;
+    margin-top: 50px;
+    font-size: 26px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #f1d755;
+    background-color: #5E30F5;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #311983;
+    color: #ecc810;
+}
+
+button:focus {
+    background-color: #f1d755;
+    color: #5E30F5;
+}
+
+marquee {
+    margin-top: 80px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1d755;
+}
