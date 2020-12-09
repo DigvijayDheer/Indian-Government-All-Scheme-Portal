@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Government all scheme portal | Select Card</title>
+    <link rel="stylesheet" href="cardNumber.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="container">
+        <div class="welcomeNote">
+            <img src="../../images/logo.png" alt="logo" width="100px">
+            <span>ভারত সরকারের সমস্ত প্রকল্পের পোর্টাল</span>
+        </div>
+        <div class="main-hadding"><p>আপনার কার্ড নম্বর প্রবেশ করান</p></div>
+        <input class="use-keyboard-input" type="text" data-type="adhaar-number" maxlength="19" placeholder="0000-0000-0000-0000">
+        <p class="advisory">আপনার কার্ড নম্বর প্রবেশের জন্য প্রথমে ফিল্ড ইনপুট ক্লিক করুন।</p>
+        <a href="../fingerprint/fingerprint-bn.html"><button class="nextButton">NEXT</button></a>
+        <marquee behavior="scroll" direction="left">Indian Government All Scheme Portal | Here you can register to those schemes,which are suitable for you.  |  भारत सरकार सभी योजना पोर्टल | यहां आप उन योजनाओं में पंजीकरण कर सकते हैं, जो आपके लिए उपयुक्त हैं। केवल एक क्लिक द्वारा कोई भी योजना चुनें |</marquee>
+    </div>
+    <script src="cardNumber.js"></script>
+    <script type="text/javascript">
+        $('[data-type="adhaar-number"]').keyup(function() {
+            var value = $(this).val();
+            value = value.replace(/\D/g, "").split(/(?:([\d]{4}))/g).filter(s => s.length > 0).join("-");
+            $(this).val(value);
+            });
+
+            $('[data-type="adhaar-number"]').on("change, blur", function() {
+            var value = $(this).val();
+            var maxLength = $(this).attr("maxLength");
+            if (value.length != maxLength) {
+                $(this).addClass("highlight-error");
+            } else {
+                $(this).removeClass("highlight-error");
+            }
+            });
+    </script>
+</body>
+</html>
