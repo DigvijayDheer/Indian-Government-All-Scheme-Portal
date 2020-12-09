@@ -154,7 +154,7 @@ span {
     height: 70px;
     width: 300px;
     position: fixed;
-    margin-left: 620px;
+    left: 40%;
     bottom: 10%;
     font-size: 26px;
     border: none;

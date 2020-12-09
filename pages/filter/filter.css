@@ -109,6 +109,10 @@ span {
     margin: 0;
 }
 
+.list ul li {
+    list-style: none;
+}
+
 .list button {
     margin: 5px;
     width: 260px;
