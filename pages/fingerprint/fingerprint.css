@@ -72,7 +72,7 @@ span {
 
 .scannerSvg {
   flex: 0.35;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
   height: 50vh;
   margin-right: 50px;
 }
@@ -120,7 +120,7 @@ svg:hover{
 
 
 button {
-    height: 60px;
+    height: 80px;
     width: 280px;
     margin-top: 50px;
     font-size: 26px;
