@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(../../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(1, 1, 20, 0.9);
+    overflow: hidden;
+}
+
+.welcomeNote {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+span {
+    font-family: 'Times New Roman',serif;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline #cb9b51;
+    background-image: linear-gradient(
+	                        to right,
+                        	#462d23 0,
+                           	#cb9b51 22%, 
+                        	#f6e27a 45%,
+                        	#f6f2c0 50%,
+                        	#f6e27a 55%,
+                        	#cb9b51 78%,
+	                        #462523 100%
+	                    );
+   color:transparent;
+   -webkit-background-clip:text;
+}
+
+.main-hadding {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d3bb46;
+}
+
+.previousButton {
+    position: fixed;
+    left: 5%;
+}
+
+.nextButton, .previousButton {
+    position: fixed;
+    top: 17%;
+    right: 5%;
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #f1d755;
+    background-color: #5E30F5;
+    cursor: pointer;
+}
+
+.nextButton :hover,
+.previousButton:hover {
+    background-color: #311983;
+    color: #ecc810;
+}
+
+.nextButton:focus,
+.previousButton:focus {
+    background-color: #f1d755;
+    color: #5E30F5;
+}
+
+.schemes button {
+    margin-bottom: 20px;
+    margin-left: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 90vw;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #f1d755;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(94, 48, 245, 0.2);
+    cursor: pointer;
+}
+
+.schemes span {
+    letter-spacing: 0;
+    font-weight: 100;
+    color: rgb(255, 71, 71);
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+.schemes button:hover {
+    background-color: rgba(94, 48, 245, .8);
+}
+
+.schemes button:focus {
+    background-color: #f1d755;
+    color: #5E30F5;
+}
+
+marquee {
+    position: fixed;
+    bottom: 3%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1d755;
+}
