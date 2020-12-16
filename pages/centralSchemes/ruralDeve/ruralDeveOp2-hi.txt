@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारत सरकार सभी योजना पोर्टल| Registration</title>
+    <link rel="stylesheet" href="ruraldev.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcomeNote">
+            <img src="../../../images/logo.png" alt="logo" width="100px">
+            <span>भारतीय सरकार ने सभी योजनाओं को जारी किया</span>
+        </div>
+        <div class="main-hadding"><p>भारत का केन्द्रीय सरकार</p></div>
+        
+        <div class="main-hadding">
+          <p>दीन दयाल उपाध्याय ग्रामीण कौशल्या योजना</p>
+           
+        </div>       
+        <div class="main-hadding">
+            <p>मिनिस्ट्री - ग्रामीण विकास मंत्रालय</p>
+        </div> 
+        <div class="main-hadding">   
+         <p>यह भारत सरकार की परियोजना है, जिसमें ग्रामीण युवाओं, विशेष रूप से बीपीएल और एससी / एसटी वर्ग के लोगों को कौशल प्रशिक्षण कार्यक्रम के माध्यम से लाभकारी रोजगार में जोड़ा जा सकता है। रोजगार-गरीबों के बीच लक्षित समूहों की आय सृजन क्षमता बढ़ाने के लिए कार्यक्रम। इस योजना को स्वर्णजयंती ग्राम स्वरोजगार योजना (एसजीएसवाई) नामक एक अन्य योजना के साथ मिला दिया गया है।</p>
+        </div>   
+        <marquee behavior="scroll" direction="left">Indian Government All Scheme Portal | Here you can register to those schemes,which are suitable for you.  |  भारत सरकार सभी योजना पोर्टल | यहां आप उन योजनाओं में पंजीकरण कर सकते हैं, जो आपके लिए उपयुक्त हैं। केवल एक क्लिक द्वारा कोई भी योजना चुनें |</marquee>
+    </div>
+</body>
+</html>
